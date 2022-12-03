@@ -33,7 +33,7 @@ pipeline {
         stage('Publish Unit Test results report') {
             steps {
                 echo 'Report'
-                publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: false, reportDir: 'target/site/jacoco/', reportFiles: 'index.html', reportName: 'jacaco report', reportTitles: ''])
+                publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: false, reportDir: 'target/sonar/', reportFiles: 'index.html', reportName: 'jacoco report', reportTitles: ''])
 
              }
         }
