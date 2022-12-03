@@ -3,7 +3,7 @@ node {
     checkout scm
   }
   stage('SonarQube Analysis') {
-    def mvn = tool '/usr/share/maven';
+    def mvn = tool 'maven-3.8.6';
     withSonarQubeEnv() {
       sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=gsilvav-pet-clinic-key"
     }
