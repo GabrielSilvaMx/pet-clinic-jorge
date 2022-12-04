@@ -287,15 +287,15 @@
 					</dependency>
 				</dependencies>
 			</plugin>
-                        <plugin>
+                         <plugin>
                            <groupId>org.owasp</groupId>
                            <artifactId>dependency-check-maven</artifactId>
                            <version>6.2.2</version>
                            <configuration>
                                <format>ALL</format>
-                               <failBuildOnCVSS>7</failBuildOnCVSS>
-                               <cveValidForHours>168</cveValidForHours>
-			       <skipProvidedScope>true</skipProvidedScope>
+                               <failBuildOnCVSS>1</failBuildOnCVSS>
+                               <cveValidForHours>1</cveValidForHours>
+                               <skipProvidedScope>true</skipProvidedScope>
                            </configuration>
                            <executions>
                                <execution>
